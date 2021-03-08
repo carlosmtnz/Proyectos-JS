@@ -1,3 +1,2 @@
 # Proyectos-JS
-Diferentes proyectos en CSS
-#Proyectos de diferentes tutoriales hechos en CSS y Javascript
+Diferentes proyectos en CSS que he hecho basado en diferentes tutoriales de youtube y otros cursos.
