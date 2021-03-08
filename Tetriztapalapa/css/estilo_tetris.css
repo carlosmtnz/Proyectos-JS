@@ -1,0 +1,16 @@
+/*Estilo de la grilla y sus secciones*/
+.grilla{
+  width: 200px;
+  height: 400px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: #004666;
+}
+.grilla div{
+  width: 20px;
+  height: 20px;
+  /*background-color: #880000;*/
+}
+.tetrimino {
+  background-color: #F4F400;
+}
