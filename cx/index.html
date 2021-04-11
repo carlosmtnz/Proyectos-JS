@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cx Bachoco</title>
+		<link rel="icon" href="img/favicon_cx.svg" sizes="any" type="image/svg+xml">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		<div id="contenido">
+			<div id="top-banner"><img src="img/top_banner.png" style="width: 100%;"/></div>			
+			<h2 id="titInstruc"><img id="pic0" src="img/expandido.png" class="btnExp" onclick="mostrarOcultar(0,1,2,3)" />Instrucciones</h2>			
+			<div id="s0">			
+					<p>A continuación, se presentan tres secciones: Hazme diferente, Hazme crecer y Hazme eficiente.  Llena, junto a tu equipo, las tres secciones. Puedes desplegar los criterios que se evalúan en cada uno haciendo clic en el botón <img src="img/expandido.png" style="display: inline; height:12px;" />.</p>
+					<p>Te invitamos a ponerte en los zapatos y en la posición de tu cliente, no en la tuya. Realiza esta autoevaluación, 100% respondiendo como lo haría tu cliente al ser entrevistado.</p> 
+					<p>Responde a cada pregunta de 1 a 5, donde tu cliente diría:</p>
+					<ol>					
+						<li>Altamente insatisfecho</li>
+						<li>Insatisfecho</li>
+						<li>Bueno</li>
+						<li>Muy bueno</li>
+						<li>Excelente</li>
+					</ol>
+					<p>Cada respuesta genera un sentimiento en tu cliente, que podrás observar en las caras encima de tus respuestas. Conforme llenas la autoevaluación, podrás ver la radiografía en colores <span style="background-color: #FF0000; color: #FFFFFF;">rojo</span> (1 y 2), <span style="background-color: #FFFF00;">amarillo</span> (3) y <span style="background-color: #00FF00; color: #FFFFFF;">verde</span> (4 y 5). En cada sección, podrás observar en la parte superior el promedio de 1 a 5.</p>
+					<p>Al final, podrás imprimir los resultados de experiencia de tu cliente con Bachoco Cx.</p>
+			</div>
+			
+			<h2><img id="pic1" src="img/expandido.png" class="btnExp" onclick="mostrarOcultar(1,2,3,0)" />Hazme diferente</h2>
+			<p class="parrafoPromedio"> Tu promedio en esta categoría es <span class="promedio" id="pro1">0</span>			
+			<div id="s1" style="display:none;">				
+				<h3>Relaciones</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f111">
+						<td class="enunciado">Relación con el KAM o asesor de ventas</td>
+						<td class="selector">
+							<select id="s111" onfocus="resetear('s111','1');" onfocus="resetear('s','1');" onchange="marcar('f111','s111','pro1');">
+								<option>Elige...</option>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</td>
+						<td class="escala" id="s1111"></td>
+						<td class="escala" id="s1112"></td>
+						<td class="escala" id="s1113"></td>
+						<td class="escala" id="s1114"></td>
+						<td class="escala" id="s1115"></td>
+					</tr>
+					<tr id="f112">
+						<td class="enunciado">Relación con promotor o cortador</td>
+						<td><select id="s112" onfocus="resetear('s112','1');" onchange="marcar('f112','s112','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1121"></td>
+						<td class="escala" id="s1122"></td>
+						<td class="escala" id="s1123"></td>
+						<td class="escala" id="s1124"></td>
+						<td class="escala" id="s1125"></td>
+					</tr>
+					<tr id="f113">
+						<td class="enunciado">Relación con el transportista logística entrega</td>
+						<td><select id="s113" onfocus="resetear('s113','1');" onchange="marcar('f113','s113','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1131"></td>
+						<td class="escala" id="s1132"></td>
+						<td class="escala" id="s1133"></td>
+						<td class="escala" id="s1134"></td>
+						<td class="escala" id="s1135"></td>
+					</tr>
+					<tr id="f114">
+						<td class="enunciado">Relaciones con otras funciones del proveedor</td>
+						<td><select id="s114" onfocus="resetear('s114','1');" onchange="marcar('f114','s114','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1141"></td>
+						<td class="escala" id="s1142"></td>
+						<td class="escala" id="s1143"></td>
+						<td class="escala" id="s1144"></td>
+						<td class="escala" id="s1145"></td>
+					</tr>
+					<tr id="f115">
+						<td class="enunciado">El tipo de relación actual es: (corbatin, uno contra muchos, mixto, células multifuncionales) es:</td>
+						<td><select id="s115" onfocus="resetear('s115','1');" onchange="marcar('f115','s115','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1151"></td>
+						<td class="escala" id="s1152"></td>
+						<td class="escala" id="s1153"></td>
+						<td class="escala" id="s1154"></td>
+						<td class="escala" id="s1155"></td>
+					</tr>
+					<tr id="f116">
+						<td class="enunciado">Matriz de contacto y relación con quienes toman decisión en Bachoco</td>
+						<td><select id="s116" onfocus="resetear('s116','1');" onchange="marcar('f116','s116','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1161"></td>
+						<td class="escala" id="s1162"></td>
+						<td class="escala" id="s1163"></td>
+						<td class="escala" id="s1164"></td>
+						<td class="escala" id="s1165"></td>
+					</tr>
+				</table>
+				<h3>Innovación exclusiva</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f121">
+						<td class="enunciado">Cantidad de innovación exclusiva</td>
+						<td><select id="s121" onfocus="resetear('s121','1');" onchange="marcar('f121','s121','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1211"></td>
+						<td class="escala" id="s1212"></td>
+						<td class="escala" id="s1213"></td>
+						<td class="escala" id="s1214"></td>
+						<td class="escala" id="s1215"></td>
+					</tr>
+					<tr id="f122">
+						<td class="enunciado">Relevancia de la innovación exclusiva</td>
+						<td><select id="s122" onfocus="resetear('s122','1');" onchange="marcar('f122','s122','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1221"></td>
+						<td class="escala" id="s1222"></td>
+						<td class="escala" id="s1223"></td>
+						<td class="escala" id="s1224"></td>
+						<td class="escala" id="s1225"></td>
+					</tr>
+					<tr id="f123">
+						<td class="enunciado">Apoyos a la innovación exclusiva</td>
+						<td><select id="s123" onfocus="resetear('s123','1');" onchange="marcar('f123','s123','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1231"></td>
+						<td class="escala" id="s1232"></td>
+						<td class="escala" id="s1233"></td>
+						<td class="escala" id="s1234"></td>
+						<td class="escala" id="s1235"></td>
+					</tr>
+					<tr id="f124">
+						<td class="enunciado">Exclusividad de la innovación por tiempos parciales o totales</td>
+						<td><select id="s124" onfocus="resetear('s124','1');" onchange="marcar('f124','s124','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1241"></td>
+						<td class="escala" id="s1242"></td>
+						<td class="escala" id="s1243"></td>
+						<td class="escala" id="s1244"></td>
+						<td class="escala" id="s1245"></td>
+					</tr>
+					<tr id="f125">
+						<td class="enunciado">Cumplimiento de los tiempos de innovación exclusiva</td>
+						<td><select id="s125" onfocus="resetear('s125','1');" onchange="marcar('f125','s125','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1251"></td>
+						<td class="escala" id="s1252"></td>
+						<td class="escala" id="s1253"></td>
+						<td class="escala" id="s1254"></td>
+						<td class="escala" id="s1255"></td>
+					</tr>
+					<tr id="f126">
+						<td class="enunciado">Tasa de éxito de las innovaciones exclusivas</td>
+						<td><select id="s126" onfocus="resetear('s126','1');" onchange="marcar('f126','s126','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1261"></td>
+						<td class="escala" id="s1262"></td>
+						<td class="escala" id="s1263"></td>
+						<td class="escala" id="s1264"></td>
+						<td class="escala" id="s1265"></td>
+					</tr>
+				</table>
+				<h3>Iniciativas comerciales exclusivas</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f131">
+						<td class="enunciado">Cantidad de promociones y eventos de activación exclusivos</td>
+						<td><select id="s131" onfocus="resetear('s131','1');" onchange="marcar('f131','s131','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1311"></td>
+						<td class="escala" id="s1312"></td>
+						<td class="escala" id="s1313"></td>
+						<td class="escala" id="s1314"></td>
+						<td class="escala" id="s1315"></td>
+					</tr>
+					<tr id="f132">
+						<td class="enunciado">Alineación de las promociones y eventos exclusivos con sus necesidades</td>
+						<td><select id="s132" onfocus="resetear('s132','1');" onchange="marcar('f132','s132','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1321"></td>
+						<td class="escala" id="s1322"></td>
+						<td class="escala" id="s1323"></td>
+						<td class="escala" id="s1324"></td>
+						<td class="escala" id="s1325"></td>
+					</tr>
+					<tr id="f133">
+						<td class="enunciado">Calidad de los apoyos a las promociones y eventos exclusivos</td>
+						<td><select id="s133" onfocus="resetear('s133','1');" onchange="marcar('f133','s133','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1331"></td>
+						<td class="escala" id="s1332"></td>
+						<td class="escala" id="s1333"></td>
+						<td class="escala" id="s1334"></td>
+						<td class="escala" id="s1335"></td>
+					</tr>
+					<tr id="f134">
+						<td class="enunciado">Frecuencia de las promociones y eventos exclusivos</td>
+						<td><select id="s134" onfocus="resetear('s134','1');" onchange="marcar('f134','s134','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1341"></td>
+						<td class="escala" id="s1342"></td>
+						<td class="escala" id="s1343"></td>
+						<td class="escala" id="s1344"></td>
+						<td class="escala" id="s1345"></td>
+					</tr>
+					<tr id="f135">
+						<td class="enunciado">Resultados de las promociones exclusivas para con los objetivos del cliente</td>
+						<td><select id="s135" onfocus="resetear('s135','1');" onchange="marcar('f135','s135','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1351"></td>
+						<td class="escala" id="s1352"></td>
+						<td class="escala" id="s1353"></td>
+						<td class="escala" id="s1354"></td>
+						<td class="escala" id="s1355"></td>
+					</tr>
+					<tr id="f136">
+						<td class="enunciado">Comunicación de las promociones exclusivas</td>
+						<td><select id="s136" onfocus="resetear('s136','1');" onchange="marcar('f136','s136','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1361"></td>
+						<td class="escala" id="s1362"></td>
+						<td class="escala" id="s1363"></td>
+						<td class="escala" id="s1364"></td>
+						<td class="escala" id="s1365"></td>
+					</tr>
+				</table>
+				<h3>Servicios de valor agregado</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f141">
+						<td class="enunciado">Category management/planogramas</td>
+						<td><select id="s141" onfocus="resetear('s141','1');" onchange="marcar('f141','s141','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1411"></td>
+						<td class="escala" id="s1412"></td>
+						<td class="escala" id="s1413"></td>
+						<td class="escala" id="s1414"></td>
+						<td class="escala" id="s1415"></td>
+					</tr>
+					<tr id="f142">
+						<td class="enunciado">Category management/surtido</td>
+						<td><select id="s142" onfocus="resetear('s142','1');" onchange="marcar('f142','s142','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1421"></td>
+						<td class="escala" id="s1422"></td>
+						<td class="escala" id="s1423"></td>
+						<td class="escala" id="s1424"></td>
+						<td class="escala" id="s1425"></td>
+					</tr>
+					<tr id="f143">
+						<td class="enunciado">Category management/promoción</td>
+						<td><select id="s143" onfocus="resetear('s143','1');" onchange="marcar('f143','s143','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1431"></td>
+						<td class="escala" id="s1432"></td>
+						<td class="escala" id="s1433"></td>
+						<td class="escala" id="s1434"></td>
+						<td class="escala" id="s1435"></td>
+					</tr>
+					<tr id="f144">
+						<td class="enunciado">Exhibidor exclusivo</td>
+						<td><select id="s144" onfocus="resetear('s144','1');" onchange="marcar('f144','s144','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1441"></td>
+						<td class="escala" id="s1442"></td>
+						<td class="escala" id="s1443"></td>
+						<td class="escala" id="s1444"></td>
+						<td class="escala" id="s1445"></td>
+					</tr>
+					<tr id="f145">
+						<td class="enunciado">Joint Business Plan</td>
+						<td><select id="s145" onfocus="resetear('s145','1');" onchange="marcar('f145','s145','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1451"></td>
+						<td class="escala" id="s1452"></td>
+						<td class="escala" id="s1453"></td>
+						<td class="escala" id="s1454"></td>
+						<td class="escala" id="s1455"></td>
+					</tr>
+					<tr id="f146">
+						<td class="enunciado">Proyecto de reducción de porcentaje de OSA (On shelve availability)</td>
+						<td><select id="s146" onfocus="resetear('s146','1');" onchange="marcar('f146','s146','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1461"></td>
+						<td class="escala" id="s1462"></td>
+						<td class="escala" id="s1463"></td>
+						<td class="escala" id="s1464"></td>
+						<td class="escala" id="s1465"></td>
+					</tr>
+					<tr id="f147">
+						<td class="enunciado">Proyecto de mejora en distribución en tienda.</td>
+						<td><select id="s147" onfocus="resetear('s147','1');" onchange="marcar('f147','s147','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1471"></td>
+						<td class="escala" id="s1472"></td>
+						<td class="escala" id="s1473"></td>
+						<td class="escala" id="s1474"></td>
+						<td class="escala" id="s1475"></td>
+					</tr>
+					<tr id="f148">
+						<td class="enunciado">Desarrollo de productos Ad hoc</td>
+						<td><select id="s148" onfocus="resetear('s148','1');" onchange="marcar('f148','s148','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1481"></td>
+						<td class="escala" id="s1482"></td>
+						<td class="escala" id="s1483"></td>
+						<td class="escala" id="s1484"></td>
+						<td class="escala" id="s1485"></td>
+					</tr>
+					<tr id="f149">
+						<td class="enunciado">Proyecto de mejora de shopper experience (Cx)</td>
+						<td><select id="s149" onfocus="resetear('s149','1');" onchange="marcar('f149','s149','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1491"></td>
+						<td class="escala" id="s1492"></td>
+						<td class="escala" id="s1493"></td>
+						<td class="escala" id="s1494"></td>
+						<td class="escala" id="s1495"></td>
+					</tr>
+					<tr id="f1410">
+						<td class="enunciado">Reuniones de revisión de negocio</td>
+						<td><select id="s1410" onfocus="resetear('s1410','1');" onchange="marcar('f1410','s1410','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s14101"></td>
+						<td class="escala" id="s14102"></td>
+						<td class="escala" id="s14103"></td>
+						<td class="escala" id="s14104"></td>
+						<td class="escala" id="s14105"></td>
+					</tr>						
+				</table>
+				<h3>Incremento de valor y conocimiento de mi marca</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f151">
+						<td class="enunciado">Programa Co-op Bachoco con marca cliente</td>
+						<td><select id="s151" onfocus="resetear('s151','1');" onchange="marcar('f151','s151','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1511"></td>
+						<td class="escala" id="s1512"></td>
+						<td class="escala" id="s1513"></td>
+						<td class="escala" id="s1514"></td>
+						<td class="escala" id="s1515"></td>
+					</tr>
+					<tr id="f152">
+						<td class="enunciado">Vallas fijas Co-Op Bachoco con marca cliente</td>
+						<td><select id="s152" onfocus="resetear('s152','1');" onchange="marcar('f152','s152','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1521"></td>
+						<td class="escala" id="s1522"></td>
+						<td class="escala" id="s1523"></td>
+						<td class="escala" id="s1524"></td>
+						<td class="escala" id="s1525"></td>
+					</tr>
+					<tr id="f153">
+						<td class="enunciado">Medios masivos Co-Op Bachoco con marca cliente</td>
+						<td><select id="s153" onfocus="resetear('s153','1');" onchange="marcar('f153','s153','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1531"></td>
+						<td class="escala" id="s1532"></td>
+						<td class="escala" id="s1533"></td>
+						<td class="escala" id="s1534"></td>
+						<td class="escala" id="s1535"></td>
+					</tr>
+					<tr id="f154">
+						<td class="enunciado">Social Media Co-Op Bachoco con marca cliente</td>
+						<td><select id="s154" onfocus="resetear('s154','1');" onchange="marcar('f154','s154','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1541"></td>
+						<td class="escala" id="s1542"></td>
+						<td class="escala" id="s1543"></td>
+						<td class="escala" id="s1544"></td>
+						<td class="escala" id="s1545"></td>
+					</tr>
+					<tr id="f155">
+						<td class="enunciado">Camiones de transporte público Co-Op Bachoco con marca cliente</td>
+						<td><select id="s155" onfocus="resetear('s155','1');" onchange="marcar('f155','s155','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1551"></td>
+						<td class="escala" id="s1552"></td>
+						<td class="escala" id="s1553"></td>
+						<td class="escala" id="s1554"></td>
+						<td class="escala" id="s1555"></td>
+					</tr>
+					<tr id="f156">
+						<td class="enunciado">Exhibidores Co-Op Bachoco con marca cliente</td>
+						<td><select id="s156" onfocus="resetear('s156','1');" onchange="marcar('f156','s156','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1561"></td>
+						<td class="escala" id="s1562"></td>
+						<td class="escala" id="s1563"></td>
+						<td class="escala" id="s1564"></td>
+						<td class="escala" id="s1565"></td>
+					</tr>
+				</table>
+				<h3>Apoyo a mi programa de lealtad</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f161">
+						<td class="enunciado">Apoyo en más afiliaciones al programa de lealtad</td>
+						<td><select id="s161" onfocus="resetear('s161','1');" onchange="marcar('f161','s161','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1611"></td>
+						<td class="escala" id="s1612"></td>
+						<td class="escala" id="s1613"></td>
+						<td class="escala" id="s1614"></td>
+						<td class="escala" id="s1615"></td>
+					</tr>
+					<tr id="f162">
+						<td class="enunciado">Apoyo en puntos del programa</td>
+						<td><select id="s162" onfocus="resetear('s162','1');" onchange="marcar('f162','s162','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1621"></td>
+						<td class="escala" id="s1622"></td>
+						<td class="escala" id="s1623"></td>
+						<td class="escala" id="s1624"></td>
+						<td class="escala" id="s1625"></td>
+					</tr>
+					<tr id="f163">
+						<td class="enunciado">Participación en el calendario de actividades</td>
+						<td><select id="s163" onfocus="resetear('s163','1');" onchange="marcar('f163','s163','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1631"></td>
+						<td class="escala" id="s1632"></td>
+						<td class="escala" id="s1633"></td>
+						<td class="escala" id="s1634"></td>
+						<td class="escala" id="s1635"></td>
+					</tr>
+					<tr id="f164">
+						<td class="enunciado">Apoyo en el conocimiento de mi programa de lealtad</td>
+						<td><select id="s164" onfocus="resetear('s164','1');" onchange="marcar('f164','s164','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1641"></td>
+						<td class="escala" id="s1642"></td>
+						<td class="escala" id="s1643"></td>
+						<td class="escala" id="s1644"></td>
+						<td class="escala" id="s1645"></td>
+					</tr>
+				</table>
+				<h3>Iniciativas con shoppers</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f171">
+						<td class="enunciado">Apoyo a sus servicios de comida para llevar o consumir (pollo frito o broster)</td>
+						<td><select id="s171" onfocus="resetear('s171','1');" onchange="marcar('f171','s171','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1711"></td>
+						<td class="escala" id="s1712"></td>
+						<td class="escala" id="s1713"></td>
+						<td class="escala" id="s1714"></td>
+						<td class="escala" id="s1715"></td>
+					</tr>
+					<tr id="f172">
+						<td class="enunciado">Apoyo en algunos de los servicios ofrecidos al shoppers</td>
+						<td><select id="s172" onfocus="resetear('s172','1');" onchange="marcar('f172','s172','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1721"></td>
+						<td class="escala" id="s1722"></td>
+						<td class="escala" id="s1723"></td>
+						<td class="escala" id="s1724"></td>
+						<td class="escala" id="s1725"></td>
+					</tr>
+					<tr id="f173">
+						<td class="enunciado">Apoyo a sus programas de redes sociales</td>
+						<td><select id="s173" onfocus="resetear('s173','1');" onchange="marcar('f173','s173','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1731"></td>
+						<td class="escala" id="s1732"></td>
+						<td class="escala" id="s1733"></td>
+						<td class="escala" id="s1734"></td>
+						<td class="escala" id="s1735"></td>
+						</tr>
+					<tr id="f174">
+						<td class="enunciado">Apoyo en los programas de sustentabilidad con shoppers</td>
+						<td><select id="s174" onfocus="resetear('s174','1');" onchange="marcar('f174','s174','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1741"></td>
+						<td class="escala" id="s1742"></td>
+						<td class="escala" id="s1743"></td>
+						<td class="escala" id="s1744"></td>
+						<td class="escala" id="s1745"></td>
+					</tr>
+					<tr id="f175">
+						<td class="enunciado">Apoyo con el programa de cupones con shoppers</td>
+						<td><select id="s175" onfocus="resetear('s175','1');" onchange="marcar('f175','s175','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1751"></td>
+						<td class="escala" id="s1752"></td>
+						<td class="escala" id="s1753"></td>
+						<td class="escala" id="s1754"></td>
+						<td class="escala" id="s1755"></td>
+					</tr>
+					<tr id="f176">
+						<td class="enunciado">Apoyo en el área de cocina.</td>
+						<td><select id="s176" onfocus="resetear('s176','1');" onchange="marcar('f176','s176','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1761"></td>
+						<td class="escala" id="s1762"></td>
+						<td class="escala" id="s1763"></td>
+						<td class="escala" id="s1764"></td>
+						<td class="escala" id="s1765"></td>
+					</tr>
+				</table>
+				<h3>Apoyo a mi programa e-commerce</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f181">
+						<td class="enunciado">Catálogo de surtido de e-commerce</td>
+						<td><select id="s181" onfocus="resetear('s181','1');" onchange="marcar('f181','s181','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1811"></td>
+						<td class="escala" id="s1812"></td>
+						<td class="escala" id="s1813"></td>
+						<td class="escala" id="s1814"></td>
+						<td class="escala" id="s1815"></td>
+					</tr>
+					<tr id="f182">
+						<td class="enunciado">Publicaciones en e-commerce</td>
+						<td><select id="s182" onfocus="resetear('s182','1');" onchange="marcar('f182','s182','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1821"></td>
+						<td class="escala" id="s1822"></td>
+						<td class="escala" id="s1823"></td>
+						<td class="escala" id="s1824"></td>
+						<td class="escala" id="s1825"></td>
+					</tr>
+					<tr id="f183">
+						<td class="enunciado">Liderazgo en precios en e-commerce</td>
+						<td><select id="s183" onfocus="resetear('s183','1');" onchange="marcar('f183','s183','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1831"></td>
+						<td class="escala" id="s1832"></td>
+						<td class="escala" id="s1833"></td>
+						<td class="escala" id="s1834"></td>
+						<td class="escala" id="s1835"></td>
+					</tr>
+					<tr id="f184">
+						<td class="enunciado">Promociones en e-commerce</td>
+						<td><select id="s184" onfocus="resetear('s184','1');" onchange="marcar('f184','s184','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1841"></td>
+						<td class="escala" id="s1842"></td>
+						<td class="escala" id="s1843"></td>
+						<td class="escala" id="s1844"></td>
+						<td class="escala" id="s1845"></td>
+					</tr>
+					<tr id="f185">
+						<td class="enunciado">Apoyo en el conocimiento de mi página de e-commerce</td>
+						<td><select id="s185" onfocus="resetear('s185','1');" onchange="marcar('f185','s185','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s1851"></td>
+						<td class="escala" id="s1852"></td>
+						<td class="escala" id="s1853"></td>
+						<td class="escala" id="s1854"></td>
+						<td class="escala" id="s1855"></td>
+					</tr>
+				</table>
+				<h3>Mejorar experiencia de compra del shopper (Cx)</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+				<tr id="f191">
+					<td class="enunciado">Apoyo con activación con degustación/recetarios</td>
+					<td><select id="s191" onfocus="resetear('s191','1');" onchange="marcar('f191','s191','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1911"></td>
+					<td class="escala" id="s1912"></td>
+					<td class="escala" id="s1913"></td>
+					<td class="escala" id="s1914"></td>
+					<td class="escala" id="s1915"></td>
+				</tr>
+				<tr id="f192">				
+					<td class="enunciado">Apoyo con activación con Impulso</td>
+					<td><select id="s192" onfocus="resetear('s192','1');" onchange="marcar('f192','s192','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1921"></td>
+					<td class="escala" id="s1922"></td>
+					<td class="escala" id="s1923"></td>
+					<td class="escala" id="s1924"></td>
+					<td class="escala" id="s1925"></td>
+				</tr>
+				<tr id="f193">
+					<td class="enunciado">Apoyo con activiación para cocinar en punto de ventas</td>
+					<td><select id="s193" onfocus="resetear('s193','1');" onchange="marcar('f193','s193','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1931"></td>
+					<td class="escala" id="s1932"></td>
+					<td class="escala" id="s1933"></td>
+					<td class="escala" id="s1934"></td>
+					<td class="escala" id="s1935"></td>
+				</tr>				
+				<tr id="f194">
+					<td class="enunciado">Apoyo con promoción con shopper en punto de venta</td>
+					<td><select id="s194" onfocus="resetear('s194','1');" onchange="marcar('f194','s194','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1941"></td>
+					<td class="escala" id="s1942"></td>
+					<td class="escala" id="s1943"></td>
+					<td class="escala" id="s1944"></td>
+					<td class="escala" id="s1945"></td>
+				</tr>
+				<tr id="f195">
+					<td class="enunciado">Apoyo con empaques especiales en punto de ventas</td>
+					<td><select id="s195" onfocus="resetear('s195','1');" onchange="marcar('f195','s195','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1951"></td>
+					<td class="escala" id="s1952"></td>
+					<td class="escala" id="s1953"></td>
+					<td class="escala" id="s1954"></td>
+					<td class="escala" id="s1955"></td>
+				</tr>
+				<tr id="f196">
+					<td class="enunciado">Interacción con los productos (Luz, sonido, etc.)</td>
+					<td><select id="s196" onfocus="resetear('s196','1');" onchange="marcar('f196','s196','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1961"></td>
+					<td class="escala" id="s1962"></td>
+					<td class="escala" id="s1963"></td>
+					<td class="escala" id="s1964"></td>
+					<td class="escala" id="s1965"></td>
+				</tr>
+				<tr id="f197">
+					<td class="enunciado">Apoyo con exhibiciones limpias, llenas y ordenadas</td>
+					<td><select id="s197" onfocus="resetear('s197','1');" onchange="marcar('f197','s197','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1971"></td>
+					<td class="escala" id="s1972"></td>
+					<td class="escala" id="s1973"></td>
+					<td class="escala" id="s1974"></td>
+					<td class="escala" id="s1975"></td>
+				</tr>
+				<tr id="f198">
+					<td class="enunciado">Apoyo en colocación de etiquetas de precios</td>
+					<td><select id="s198" onfocus="resetear('s198','1');" onchange="marcar('f198','s198','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1981"></td>
+					<td class="escala" id="s1982"></td>
+					<td class="escala" id="s1983"></td>
+					<td class="escala" id="s1984"></td>
+					<td class="escala" id="s1985"></td>
+				</tr>
+				<tr id="f199">
+					<td class="enunciado">Apoyo con exhibiciones adicionales</td>
+						<td><select id="s199" onfocus="resetear('s199','1');" onchange="marcar('f199','s199','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+					<td class="escala" id="s1991"></td>
+					<td class="escala" id="s1992"></td>
+					<td class="escala" id="s1993"></td>
+					<td class="escala" id="s1994"></td>
+					<td class="escala" id="s1995"></td>
+				</tr>
+				<tr id="f1910">
+					<td class="enunciado">Apoyo con visibilidad y señalización en punto de venta</td>
+					<td>
+						<select id="s1910" onfocus="resetear('s1910','1');" onchange="marcar('f1910','s1910','pro1');">
+							<option>Elige...</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</td>
+					<td class="escala" id="s19101"></td>
+					<td class="escala" id="s19102"></td>
+					<td class="escala" id="s19103"></td>
+					<td class="escala" id="s19104"></td>
+					<td class="escala" id="s19105"></td>
+				</tr>
+				<tr id="f1911-">
+				<td class="enunciado">Apoyo con visibilidad en la entrada de la tienda</td>
+				<td><select id="s1911-" onfocus="resetear('s1911-','1');" onchange="marcar('f1911-','s1911-','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+				<td class="escala" id="s1911-1"></td>
+				<td class="escala" id="s1911-2"></td>
+				<td class="escala" id="s1911-3"></td>
+				<td class="escala" id="s1911-4"></td>
+				<td class="escala" id="s1911-5"></td>
+				</tr>
+				<tr id="f1912-">
+				<td class="enunciado">Apoyo con control de temperatura de equipos</td>
+				<td><select id="s1912-" onfocus="resetear('s1912-','1');" onchange="marcar('f1912-','s1912-','pro1');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+				<td class="escala" id="s1912-1"></td>
+				<td class="escala" id="s1912-2"></td>
+				<td class="escala" id="s1912-3"></td>
+				<td class="escala" id="s1912-4"></td>
+				<td class="escala" id="s1912-5"></td>
+				</tr>
+				</table>
+			</div>
+			
+			<h2><img id="pic2" src="img/expandido.png" class="btnExp" onclick="mostrarOcultar(2,3,0,1)" />Hazme crecer</h2>
+			<p class="parrafoPromedio"> Tu promedio en esta categoría es <span class="promedio" id="pro2">0</span>			
+			<div id="s2" style="display:none;">				
+				<h3>Apoyo a su estrategia de crecimiento</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f211">
+						<td class="enunciado">Apoyo a apertura de tiendas nuevas</td>
+						<td><select id="s211" onfocus="resetear('s211','2');" onchange="marcar('f211','s211','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2111"></td>
+						<td class="escala" id="s2112"></td>
+						<td class="escala" id="s2113"></td>
+						<td class="escala" id="s2114"></td>
+						<td class="escala" id="s2115"></td>
+					</tr>
+					<tr id="f212">
+						<td class="enunciado">Apoyo en renovación de tiendas existentes</td>
+						<td><select id="s212" onfocus="resetear('s212','2');" onchange="marcar('f212','s212','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2121"></td>
+						<td class="escala" id="s2122"></td>
+						<td class="escala" id="s2123"></td>
+						<td class="escala" id="s2124"></td>
+						<td class="escala" id="s2125"></td>
+					</tr>
+					<tr id="f213">
+						<td class="enunciado">Apoyo en los aniversarios</td>
+						<td><select id="s213" onfocus="resetear('s213','2');" onchange="marcar('f213','s213','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2131"></td>
+						<td class="escala" id="s2132"></td>
+						<td class="escala" id="s2133"></td>
+						<td class="escala" id="s2134"></td>
+						<td class="escala" id="s2135"></td>
+					</tr>
+					<tr id="f214">
+						<td class="enunciado">Apoyo a la Omnicanalidad del shopper</td>
+						<td><select id="s214" onfocus="resetear('s214','2');" onchange="marcar('f214','s214','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2141"></td>
+						<td class="escala" id="s2142"></td>
+						<td class="escala" id="s2143"></td>
+						<td class="escala" id="s2144"></td>
+						<td class="escala" id="s2145"></td>
+					</tr>
+					<tr id="f215">
+						<td class="enunciado">Apoyo en captura de clientes a la tienda (tráfico)</td>
+						<td><select id="s215" onfocus="resetear('s215','2');" onchange="marcar('f215','s215','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2151"></td>
+						<td class="escala" id="s2152"></td>
+						<td class="escala" id="s2153"></td>
+						<td class="escala" id="s2154"></td>
+						<td class="escala" id="s2155"></td>
+					</tr>
+					<tr id="f216">
+						<td class="enunciado">Apoyo en aumento de frecuencia de compra</td>
+						<td><select id="s216" onfocus="resetear('s216','2');" onchange="marcar('f216','s216','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2161"></td>
+						<td class="escala" id="s2162"></td>
+						<td class="escala" id="s2163"></td>
+						<td class="escala" id="s2164"></td>
+						<td class="escala" id="s2165"></td>
+					</tr>
+					<tr id="f217">
+						<td class="enunciado">Apoyo en aumento del valor de la cesta y valor por ítem</td>
+						<td><select id="s217" onfocus="resetear('s217','2');" onchange="marcar('f217','s217','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2171"></td>
+						<td class="escala" id="s2172"></td>
+						<td class="escala" id="s2173"></td>
+						<td class="escala" id="s2174"></td>
+						<td class="escala" id="s2175"></td>
+					</tr>
+					<tr id="f218">
+						<td class="enunciado">Apoyo para el crecimiento de la categoría o segmento</td>
+						<td><select id="s218" onfocus="resetear('s218','2');" onchange="marcar('f218','s218','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2181"></td>
+						<td class="escala" id="s2182"></td>
+						<td class="escala" id="s2183"></td>
+						<td class="escala" id="s2184"></td>
+						<td class="escala" id="s2185"></td>
+					</tr>
+				</table>
+				<h3>Surtido de productos</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f221">
+						<td class="enunciado">Catálogo de productos</td>
+						<td><select id="s221" onfocus="resetear('s221','2');" onchange="marcar('f221','s221','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2211"></td>
+						<td class="escala" id="s2212"></td>
+						<td class="escala" id="s2213"></td>
+						<td class="escala" id="s2214"></td>
+						<td class="escala" id="s2215"></td>
+					</tr>
+
+					<tr id="f222">
+						<td class="enunciado">Surtido por segmento de tiendas</td>
+						<td><select id="s222" onfocus="resetear('s222','2');" onchange="marcar('f222','s222','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2221"></td>
+						<td class="escala" id="s2222"></td>
+						<td class="escala" id="s2223"></td>
+						<td class="escala" id="s2224"></td>
+						<td class="escala" id="s2225"></td>
+					</tr>
+					<tr id="f223">
+						<td class="enunciado">Surtido por punto de venta</td>
+						<td><select id="s223" onfocus="resetear('s223','2');" onchange="marcar('f223','s223','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2231"></td>
+						<td class="escala" id="s2232"></td>
+						<td class="escala" id="s2233"></td>
+						<td class="escala" id="s2234"></td>
+						<td class="escala" id="s2235"></td>
+					</tr>
+					<tr id="f224">
+						<td class="enunciado">Surtido con el apoyo de inteligencia artificial</td>
+						<td><select id="s224" onfocus="resetear('s224','2');" onchange="marcar('f224','s224','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2241"></td>
+						<td class="escala" id="s2242"></td>
+						<td class="escala" id="s2243"></td>
+						<td class="escala" id="s2244"></td>
+						<td class="escala" id="s2245"></td>
+					</tr>
+				</table>
+				<h3>Innovación no exclusiva</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f231">
+						<td class="enunciado">Cantidad de innovación</td>
+						<td><select id="s231" onfocus="resetear('s231','2');" onchange="marcar('f231','s231','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2311"></td>
+						<td class="escala" id="s2312"></td>
+						<td class="escala" id="s2313"></td>
+						<td class="escala" id="s2314"></td>
+						<td class="escala" id="s2315"></td>
+					</tr>
+					<tr id="f232">
+						<td class="enunciado">Relevancia de la innovación</td>
+						<td><select id="s232" onfocus="resetear('s232','2');" onchange="marcar('f232','s232','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2321"></td>
+						<td class="escala" id="s2322"></td>
+						<td class="escala" id="s2323"></td>
+						<td class="escala" id="s2324"></td>
+						<td class="escala" id="s2325"></td>
+					</tr>
+					<tr id="f233">
+						<td class="enunciado">Apoyos a la innovación</td>
+						<td><select id="s233" onfocus="resetear('s233','2');" onchange="marcar('f233','s233','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2331"></td>
+						<td class="escala" id="s2332"></td>
+						<td class="escala" id="s2333"></td>
+						<td class="escala" id="s2334"></td>
+						<td class="escala" id="s2335"></td>
+					</tr>
+					<tr id="f234">
+						<td class="enunciado">Cumplimiento de los tiempos de innovacion</td>
+						<td><select id="s234" onfocus="resetear('s234','2');" onchange="marcar('f234','s234','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2341"></td>
+						<td class="escala" id="s2342"></td>
+						<td class="escala" id="s2343"></td>
+						<td class="escala" id="s2344"></td>
+						<td class="escala" id="s2345"></td>
+					</tr>
+					<tr id="f235">
+						<td class="enunciado">Tasa de éxito de las innovaciones</td>
+						<td><select id="s235" onfocus="resetear('s235','2');" onchange="marcar('f235','s235','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2351"></td>
+						<td class="escala" id="s2352"></td>
+						<td class="escala" id="s2353"></td>
+						<td class="escala" id="s2354"></td>
+						<td class="escala" id="s2355"></td>
+					</tr>
+				</table>
+				<h3>Iniciativas comerciales no exclusivas</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f241">
+						<td class="enunciado">Cantidad de promociones y eventos de activación</td>
+						<td><select id="s241" onfocus="resetear('s241','2');" onchange="marcar('f241','s241','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2411"></td>
+						<td class="escala" id="s2412"></td>
+						<td class="escala" id="s2413"></td>
+						<td class="escala" id="s2414"></td>
+						<td class="escala" id="s2415"></td>
+					</tr>
+					<tr id="f242">
+						<td class="enunciado">Alineación de las promociones y eventos con sus necesidades</td>
+						<td><select id="s242" onfocus="resetear('s242','2');" onchange="marcar('f242','s242','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2421"></td>
+						<td class="escala" id="s2422"></td>
+						<td class="escala" id="s2423"></td>
+						<td class="escala" id="s2424"></td>
+						<td class="escala" id="s2425"></td>
+					</tr>
+					<tr id="f243">
+						<td class="enunciado">Calidad de los apoyos a las promociones y eventos</td>
+						<td><select id="s243" onfocus="resetear('s243','2');" onchange="marcar('f243','s243','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2431"></td>
+						<td class="escala" id="s2432"></td>
+						<td class="escala" id="s2433"></td>
+						<td class="escala" id="s2434"></td>
+						<td class="escala" id="s2435"></td>
+					</tr>
+					<tr id="f244">
+						<td class="enunciado">Frecuencia de las promociones y eventos</td>
+						<td><select id="s244" onfocus="resetear('s244','2');" onchange="marcar('f244','s244','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2441"></td>
+						<td class="escala" id="s2442"></td>
+						<td class="escala" id="s2443"></td>
+						<td class="escala" id="s2444"></td>
+						<td class="escala" id="s2445"></td>
+					</tr>
+					<tr id="f245">
+						<td class="enunciado">Resultados de las promociones para con los objetivos del cliente</td>
+						<td><select id="s245" onfocus="resetear('s245','2');" onchange="marcar('f245','s245','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2451"></td>
+						<td class="escala" id="s2452"></td>
+						<td class="escala" id="s2453"></td>
+						<td class="escala" id="s2454"></td>
+						<td class="escala" id="s2455"></td>
+					</tr>
+					<tr id="f246">
+						<td class="enunciado">Comunicación de las promociones</td>
+						<td><select id="s246" onfocus="resetear('s246','2');" onchange="marcar('f246','s246','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2461"></td>
+						<td class="escala" id="s2462"></td>
+						<td class="escala" id="s2463"></td>
+						<td class="escala" id="s2464"></td>
+						<td class="escala" id="s2465"></td>
+					</tr>
+					<tr id="f247">
+						<td class="enunciado">Seguimiento de las promociones</td>
+						<td><select id="s247" onfocus="resetear('s247','2');" onchange="marcar('f247','s247','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2471"></td>
+						<td class="escala" id="s2472"></td>
+						<td class="escala" id="s2473"></td>
+						<td class="escala" id="s2474"></td>
+						<td class="escala" id="s2475"></td>
+					</tr>
+				</table>
+				<h3>Promotoría</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f251">
+						<td class="enunciado">Cantidad de promotores</td>
+						<td><select id="s251" onfocus="resetear('s251','2');" onchange="marcar('f251','s251','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2511"></td>
+						<td class="escala" id="s2512"></td>
+						<td class="escala" id="s2513"></td>
+						<td class="escala" id="s2514"></td>
+						<td class="escala" id="s2515"></td>
+					</tr>
+					<tr id="f252">
+						<td class="enunciado">Cantidad de cortadores</td>
+						<td><select id="s252" onfocus="resetear('s252','2');" onchange="marcar('f252','s252','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2521"></td>
+						<td class="escala" id="s2522"></td>
+						<td class="escala" id="s2523"></td>
+						<td class="escala" id="s2524"></td>
+						<td class="escala" id="s2525"></td>
+					</tr>
+					<tr id="f253">
+						<td class="enunciado">Calidad del servicio de promotores o cortadores</td>
+						<td><select id="s253" onfocus="resetear('s253','2');" onchange="marcar('f253','s253','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2531"></td>
+						<td class="escala" id="s2532"></td>
+						<td class="escala" id="s2533"></td>
+						<td class="escala" id="s2534"></td>
+						<td class="escala" id="s2535"></td>
+					</tr>
+					<tr id="f254">
+						<td class="enunciado">Frecuencia y duración de visitas a tienda</td>
+						<td><select id="s254" onfocus="resetear('s254','2');" onchange="marcar('f254','s254','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2541"></td>
+						<td class="escala" id="s2542"></td>
+						<td class="escala" id="s2543"></td>
+						<td class="escala" id="s2544"></td>
+						<td class="escala" id="s2545"></td>
+					</tr>
+					<tr id="f255">
+						<td class="enunciado">Visibilidad colocada</td>
+						<td><select id="s255" onfocus="resetear('s255','2');" onchange="marcar('f255','s255','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2551"></td>
+						<td class="escala" id="s2552"></td>
+						<td class="escala" id="s2553"></td>
+						<td class="escala" id="s2554"></td>
+						<td class="escala" id="s2555"></td>
+					</tr>
+					<tr id="f256">
+						<td class="enunciado">Guias ejecucionales y planogramas ejecutados</td>
+						<td><select id="s256" onfocus="resetear('s256','2');" onchange="marcar('f256','s256','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2561"></td>
+						<td class="escala" id="s2562"></td>
+						<td class="escala" id="s2563"></td>
+						<td class="escala" id="s2564"></td>
+						<td class="escala" id="s2565"></td>
+					</tr>
+					<tr id="f257">
+						<td class="enunciado">Exhibiciones ejecutadas</td>
+						<td><select id="s257" onfocus="resetear('s257','2');" onchange="marcar('f257','s257','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2571"></td>
+						<td class="escala" id="s2572"></td>
+						<td class="escala" id="s2573"></td>
+						<td class="escala" id="s2574"></td>
+						<td class="escala" id="s2575"></td>
+					</tr>
+				</table>
+				<h3>Apoyo en análisis y generación de tráfico en el pasillo</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f261">
+						<td class="enunciado">Asesoría en planogramas</td>
+						<td><select id="s261" onfocus="resetear('s261','2');" onchange="marcar('f261','s261','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2611"></td>
+						<td class="escala" id="s2612"></td>
+						<td class="escala" id="s2613"></td>
+						<td class="escala" id="s2614"></td>
+						<td class="escala" id="s2615"></td>
+					</tr>
+					<tr id="f262">
+						<td class="enunciado">Material de visibilidad para delimitar segmentos</td>
+						<td><select id="s262" onfocus="resetear('s262','2');" onchange="marcar('f262','s262','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2621"></td>
+						<td class="escala" id="s2622"></td>
+						<td class="escala" id="s2623"></td>
+						<td class="escala" id="s2624"></td>
+						<td class="escala" id="s2625"></td>
+					</tr>
+					<tr id="f263">
+						<td class="enunciado">Asesoría en categorías adyacentes</td>
+						<td><select id="s263" onfocus="resetear('s263','2');" onchange="marcar('f263','s263','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2631"></td>
+						<td class="escala" id="s2632"></td>
+						<td class="escala" id="s2633"></td>
+						<td class="escala" id="s2634"></td>
+						<td class="escala" id="s2635"></td>
+					</tr>
+					<tr id="f264">
+						<td class="enunciado">Apoyo en análisis de tráfico en pasillo</td>
+						<td><select id="s264" onfocus="resetear('s264','2');" onchange="marcar('f264','s264','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2641"></td>
+						<td class="escala" id="s2642"></td>
+						<td class="escala" id="s2643"></td>
+						<td class="escala" id="s2644"></td>
+						<td class="escala" id="s2645"></td>
+					</tr>
+					<tr id="f265">
+						<td class="enunciado">Apoyo en el aumento de exposición de la categoría</td>
+						<td><select id="s265" onfocus="resetear('s265','2');" onchange="marcar('f265','s265','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2651"></td>
+						<td class="escala" id="s2652"></td>
+						<td class="escala" id="s2653"></td>
+						<td class="escala" id="s2654"></td>
+						<td class="escala" id="s2655"></td>
+					</tr>
+					<tr id="f266">
+						<td class="enunciado">Apoyo en el aumento de la consideración de la categoría</td>
+						<td><select id="s266" onfocus="resetear('s266','2');" onchange="marcar('f266','s266','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2661"></td>
+						<td class="escala" id="s2662"></td>
+						<td class="escala" id="s2663"></td>
+						<td class="escala" id="s2664"></td>
+						<td class="escala" id="s2665"></td>
+					</tr>
+					<tr id="f267">
+						<td class="enunciado">Apoyo en el aumento de la interacción de los productos en la categoría</td>
+						<td><select id="s267" onfocus="resetear('s267','2');" onchange="marcar('f267','s267','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2671"></td>
+						<td class="escala" id="s2672"></td>
+						<td class="escala" id="s2673"></td>
+						<td class="escala" id="s2674"></td>
+						<td class="escala" id="s2675"></td>
+					</tr>
+					<tr id="f268">
+						<td class="enunciado">Apoyo en el aumento de compra de los productos en la  categoría</td>
+						<td><select id="s268" onfocus="resetear('s268','2');" onchange="marcar('f268','s268','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2681"></td>
+						<td class="escala" id="s2682"></td>
+						<td class="escala" id="s2683"></td>
+						<td class="escala" id="s2684"></td>
+						<td class="escala" id="s2685"></td>
+					</tr>
+				</table>
+				<h3>Descuentos y términos y condiciones comerciales</h3>
+				<table>
+				<tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f271">
+						<td class="enunciado">Descuentos logísticos</td>
+						<td><select id="s271" onfocus="resetear('s271','2');" onchange="marcar('f271','s271','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2711"></td>
+						<td class="escala" id="s2712"></td>
+						<td class="escala" id="s2713"></td>
+						<td class="escala" id="s2714"></td>
+						<td class="escala" id="s2715"></td>
+					</tr>
+					<tr id="f272">
+						<td class="enunciado">Descuentos frontales (en factura)</td>
+						<td><select id="s272" onfocus="resetear('s272','2');" onchange="marcar('f272','s272','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2721"></td>
+						<td class="escala" id="s2722"></td>
+						<td class="escala" id="s2723"></td>
+						<td class="escala" id="s2724"></td>
+						<td class="escala" id="s2725"></td>
+					</tr>
+					<tr id="f273">
+						<td class="enunciado">Descuentos posteriores (fuera de factura)</td>
+						<td><select id="s273" onfocus="resetear('s273','2');" onchange="marcar('f273','s273','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2731"></td>
+						<td class="escala" id="s2732"></td>
+						<td class="escala" id="s2733"></td>
+						<td class="escala" id="s2734"></td>
+						<td class="escala" id="s2735"></td>
+					</tr>
+					<tr id="f274">
+						<td class="enunciado">Descuentos posteriores con contraprestación</td>
+						<td><select id="s274" onfocus="resetear('s274','2');" onchange="marcar('f274','s274','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2741"></td>
+						<td class="escala" id="s2742"></td>
+						<td class="escala" id="s2743"></td>
+						<td class="escala" id="s2744"></td>
+						<td class="escala" id="s2745"></td>
+					</tr>
+					<tr id="f275">
+						<td class="enunciado">Descuentos financieros</td>
+						<td><select id="s275" onfocus="resetear('s275','2');" onchange="marcar('f275','s275','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2751"></td>
+						<td class="escala" id="s2752"></td>
+						<td class="escala" id="s2753"></td>
+						<td class="escala" id="s2754"></td>
+						<td class="escala" id="s2755"></td>
+					</tr>
+					<tr id="f276">
+						<td class="enunciado">Descuentos para apoyo a márgenes</td>
+						<td><select id="s276" onfocus="resetear('s276','2');" onchange="marcar('f276','s276','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2761"></td>
+						<td class="escala" id="s2762"></td>
+						<td class="escala" id="s2763"></td>
+						<td class="escala" id="s2764"></td>
+						<td class="escala" id="s2765"></td>
+					</tr>
+				</table>
+				<h3>Apoyo en mi posicionamiento de liderazgo en precios</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f281">
+						<td class="enunciado">Liderazgo en precios en marcas y SKUs</td>
+						<td><select id="s281" onfocus="resetear('s281','2');" onchange="marcar('f281','s281','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2811"></td>
+						<td class="escala" id="s2812"></td>
+						<td class="escala" id="s2813"></td>
+						<td class="escala" id="s2814"></td>
+						<td class="escala" id="s2815"></td>
+					</tr>
+					<tr id="f282">
+						<td class="enunciado">Liderazgo en precios vs otras cadenas</td>
+						<td><select id="s282" onfocus="resetear('s282','2');" onchange="marcar('f282','s282','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2821"></td>
+						<td class="escala" id="s2822"></td>
+						<td class="escala" id="s2823"></td>
+						<td class="escala" id="s2824"></td>
+						<td class="escala" id="s2825"></td>
+					</tr>
+					<tr id="f283">
+						<td class="enunciado">Liderazgo en precios con producto diferenciador</td>
+						<td><select id="s283" onfocus="resetear('s283','2');" onchange="marcar('f283','s283','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2831"></td>
+						<td class="escala" id="s2832"></td>
+						<td class="escala" id="s2833"></td>
+						<td class="escala" id="s2834"></td>
+						<td class="escala" id="s2835"></td>
+					</tr>					
+				</table>
+				<h3>Margen de los productos ofrecidos por Bachoco</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f291">
+						<td class="enunciado">Porcentaje de margen bruto</td>
+						<td><select id="s291" onfocus="resetear('s291','2');" onchange="marcar('f291','s291','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2911"></td>
+						<td class="escala" id="s2912"></td>
+						<td class="escala" id="s2913"></td>
+						<td class="escala" id="s2914"></td>
+						<td class="escala" id="s2915"></td>
+					</tr>
+					<tr id="f292">
+						<td class="enunciado">Porcentaje de margen neto</td>
+						<td><select id="s292" onfocus="resetear('s292','2');" onchange="marcar('f292','s292','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2921"></td>
+						<td class="escala" id="s2922"></td>
+						<td class="escala" id="s2923"></td>
+						<td class="escala" id="s2924"></td>
+						<td class="escala" id="s2925"></td>
+					</tr>
+					<tr id="f293">
+						<td class="enunciado">Margen con contraprestación</td>
+						<td><select id="s293" onfocus="resetear('s293','2');" onchange="marcar('f293','s293','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s2931"></td>
+						<td class="escala" id="s2932"></td>
+						<td class="escala" id="s2933"></td>
+						<td class="escala" id="s2934"></td>
+						<td class="escala" id="s2935"></td>
+					</tr>			
+				</table>
+				<h3>Participación de sus actividades promocionales y eventos</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f2101">
+						<td class="enunciado">Participación en el calendario promocional y aniversarios del cliente</td>
+						<td><select id="s2101" onfocus="resetear('s2101','2');" onchange="marcar('f2101','s2101','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s21011"></td>
+						<td class="escala" id="s21012"></td>
+						<td class="escala" id="s21013"></td>
+						<td class="escala" id="s21014"></td>
+						<td class="escala" id="s21015"></td>
+					</tr>
+					<tr id="f2102">
+						<td class="enunciado">Participación en calendario de eventos del cliente</td>
+						<td><select id="s2102" onfocus="resetear('s2102','2');" onchange="marcar('f2102','s2102','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s21021"></td>
+						<td class="escala" id="s21022"></td>
+						<td class="escala" id="s21023"></td>
+						<td class="escala" id="s21024"></td>
+						<td class="escala" id="s21025"></td>
+					</tr>
+					<tr id="f2103">
+						<td class="enunciado">Participación en programas de sustentabilidad</td>
+						<td><select id="s2103" onfocus="resetear('s2103','2');" onchange="marcar('f2103','s2103','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s21031"></td>
+						<td class="escala" id="s21032"></td>
+						<td class="escala" id="s21033"></td>
+						<td class="escala" id="s21034"></td>
+						<td class="escala" id="s21035"></td>
+					</tr>
+					<tr id="f2104">
+						<td class="enunciado">Participación en optimización de la cadena de valor</td>
+						<td><select id="s2104" onfocus="resetear('s2104','2');" onchange="marcar('f2104','s2104','pro2');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s21041"></td>
+						<td class="escala" id="s21042"></td>
+						<td class="escala" id="s21043"></td>
+						<td class="escala" id="s21044"></td>
+						<td class="escala" id="s21045"></td>
+					</tr>
+				</table>
+			</div>
+
+			
+			<h2><img id="pic3" src="img/expandido.png" class="btnExp" onclick="mostrarOcultar(3,0,1,2)" />	Hazme eficiente</h2>
+			<p class="parrafoPromedio"> Tu promedio en esta categoría es <span class="promedio" id="pro3">0</span>			
+			<div id="s3" style="display:none;">				
+				<h3>Gestión de pedidos</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f311">
+						<td class="enunciado">Electrónica EDI data interchange</td>
+						<td><select id="s311" onfocus="resetear('s311','3');" onchange="marcar('f311','s311','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3111"></td>
+						<td class="escala" id="s3112"></td>
+						<td class="escala" id="s3113"></td>
+						<td class="escala" id="s3114"></td>
+						<td class="escala" id="s3115"></td>
+					</tr>
+					<tr id="f312">
+						<td class="enunciado">Generación de las órdenes de compra</td>
+						<td><select id="s312" onfocus="resetear('s312','3');" onchange="marcar('f312','s312','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3121"></td>
+						<td class="escala" id="s3122"></td>
+						<td class="escala" id="s3123"></td>
+						<td class="escala" id="s3124"></td>
+						<td class="escala" id="s3125"></td>
+					</tr>
+					<tr id="f313">
+						<td class="enunciado">Determinación de los puntos de reorden</td>
+						<td><select id="s313" onfocus="resetear('s313','3');" onchange="marcar('f313','s313','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3131"></td>
+						<td class="escala" id="s3132"></td>
+						<td class="escala" id="s3133"></td>
+						<td class="escala" id="s3134"></td>
+						<td class="escala" id="s3135"></td>
+					</tr>
+					<tr id="f314">
+						<td class="enunciado">CPFR. Planeación y resurtido colaborativo</td>
+						<td><select id="s314" onfocus="resetear('s314','3');" onchange="marcar('f314','s314','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3141"></td>
+						<td class="escala" id="s3142"></td>
+						<td class="escala" id="s3143"></td>
+						<td class="escala" id="s3144"></td>
+						<td class="escala" id="s3145"></td>
+					</tr>
+					<tr id="f315">
+						<td class="enunciado">Recolección de pedidos a nivel de departamentos en pdv</td>
+						<td><select id="s315" onfocus="resetear('s315','3');" onchange="marcar('f315','s315','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3151"></td>
+						<td class="escala" id="s3152"></td>
+						<td class="escala" id="s3153"></td>
+						<td class="escala" id="s3154"></td>
+						<td class="escala" id="s3155"></td>
+					</tr>
+					<tr id="f316">
+						<td class="enunciado">Recolección de pedidos a nivel de Televentas</td>
+						<td><select id="s316" onfocus="resetear('s316','3');" onchange="marcar('f316','s316','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3161"></td>
+						<td class="escala" id="s3162"></td>
+						<td class="escala" id="s3163"></td>
+						<td class="escala" id="s3164"></td>
+						<td class="escala" id="s3165"></td>
+					</tr>
+				</table>
+				<h3>Apoyo a reducción de gastos operativos</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f321">
+						<td class="enunciado">Reducción de mano de obra</td>
+						<td><select id="s321" onfocus="resetear('s321','3');" onchange="marcar('f321','s321','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3211"></td>
+						<td class="escala" id="s3212"></td>
+						<td class="escala" id="s3213"></td>
+						<td class="escala" id="s3214"></td>
+						<td class="escala" id="s3215"></td>
+					</tr>
+					<tr id="f322">
+						<td class="enunciado">Entrenamiento de mano de obra</td>
+						<td><select id="s322" onfocus="resetear('s322','3');" onchange="marcar('f322','s322','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3221"></td>
+						<td class="escala" id="s3222"></td>
+						<td class="escala" id="s3223"></td>
+						<td class="escala" id="s3224"></td>
+						<td class="escala" id="s3225"></td>
+					</tr>
+					<tr id="f323">
+						<td class="enunciado">Optimización de procesos</td>
+						<td><select id="s323" onfocus="resetear('s323','3');" onchange="marcar('f323','s323','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3231"></td>
+						<td class="escala" id="s3232"></td>
+						<td class="escala" id="s3233"></td>
+						<td class="escala" id="s3234"></td>
+						<td class="escala" id="s3235"></td>
+					</tr>
+					<tr id="f324">
+						<td class="enunciado">Reducción de gastos operativos</td>
+						<td><select id="s324" onfocus="resetear('s324','3');" onchange="marcar('f324','s324','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3241"></td>
+						<td class="escala" id="s3242"></td>
+						<td class="escala" id="s3243"></td>
+						<td class="escala" id="s3244"></td>
+						<td class="escala" id="s3245"></td>
+					</tr>
+					<tr id="f325">
+						<td class="enunciado">Ready to Display (RTD) empaques especiales</td>
+						<td><select id="s325" onfocus="resetear('s325','3');" onchange="marcar('f325','s325','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3251"></td>
+						<td class="escala" id="s3252"></td>
+						<td class="escala" id="s3253"></td>
+						<td class="escala" id="s3254"></td>
+						<td class="escala" id="s3255"></td>
+					</tr>
+					<tr id="f326">
+						<td class="enunciado">Reducción de costos logísticos</td>
+						<td><select id="s326" onfocus="resetear('s326','3');" onchange="marcar('f326','s326','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3261"></td>
+						<td class="escala" id="s3262"></td>
+						<td class="escala" id="s3263"></td>
+						<td class="escala" id="s3264"></td>
+						<td class="escala" id="s3265"></td>
+					</tr>
+					<tr id="f327">
+						<td class="enunciado">Reducción de costos financieros</td>
+						<td><select id="s327" onfocus="resetear('s327','3');" onchange="marcar('f327','s327','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3271"></td>
+						<td class="escala" id="s3272"></td>
+						<td class="escala" id="s3273"></td>
+						<td class="escala" id="s3274"></td>
+						<td class="escala" id="s3275"></td>
+					</tr>
+					<tr id="f328">
+						<td class="enunciado">Reducción de costos de mercadeo</td>
+						<td><select id="s328" onfocus="resetear('s328','3');" onchange="marcar('f328','s328','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3281"></td>
+						<td class="escala" id="s3282"></td>
+						<td class="escala" id="s3283"></td>
+						<td class="escala" id="s3284"></td>
+						<td class="escala" id="s3285"></td>
+					</tr>
+				</table>
+				<h3>Cumplimiento de los objetivos del comprador o jefe de departamento en piso de ventas</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f331">
+						<td class="enunciado">Margen de tus marcas y categorías</td>
+						<td><select id="s331" onfocus="resetear('s331','3');" onchange="marcar('f331','s331','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3311"></td>
+						<td class="escala" id="s3312"></td>
+						<td class="escala" id="s3313"></td>
+						<td class="escala" id="s3314"></td>
+						<td class="escala" id="s3315"></td>
+						</tr>
+					<tr id="f332">
+						<td class="enunciado">Niveles de inventarios</td>
+						<td><select id="s332" onfocus="resetear('s332','3');" onchange="marcar('f332','s332','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3321"></td>
+						<td class="escala" id="s3322"></td>
+						<td class="escala" id="s3323"></td>
+						<td class="escala" id="s3324"></td>
+						<td class="escala" id="s3325"></td>
+						</tr>
+					<tr id="f333">
+						<td class="enunciado">Porcentaje de Fill Rate</td>
+						<td><select id="s333" onfocus="resetear('s333','3');" onchange="marcar('f333','s333','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3331"></td>
+						<td class="escala" id="s3332"></td>
+						<td class="escala" id="s3333"></td>
+						<td class="escala" id="s3334"></td>
+						<td class="escala" id="s3335"></td>
+						</tr>
+					<tr id="f334">
+						<td class="enunciado">Pedidos On Time</td>
+						<td><select id="s334" onfocus="resetear('s334','3');" onchange="marcar('f334','s334','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3341"></td>
+						<td class="escala" id="s3342"></td>
+						<td class="escala" id="s3343"></td>
+						<td class="escala" id="s3344"></td>
+						<td class="escala" id="s3345"></td>
+						</tr>
+					<tr id="f335">
+						<td class="enunciado">Crecimiento en ventas de la categoría</td>
+						<td><select id="s335" onfocus="resetear('s335','3');" onchange="marcar('f335','s335','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3351"></td>
+						<td class="escala" id="s3352"></td>
+						<td class="escala" id="s3353"></td>
+						<td class="escala" id="s3354"></td>
+						<td class="escala" id="s3355"></td>
+						</tr>
+					<tr id="f336">
+						<td class="enunciado">Porcentaje de merma</td>
+						<td><select id="s336" onfocus="resetear('s336','3');" onchange="marcar('f336','s336','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3361"></td>
+						<td class="escala" id="s3362"></td>
+						<td class="escala" id="s3363"></td>
+						<td class="escala" id="s3364"></td>
+						<td class="escala" id="s3365"></td>
+					</tr>
+					<tr id="f337">
+						<td class="enunciado">Otros objetivos del comprador</td>
+						<td><select id="s337" onfocus="resetear('s337','3');" onchange="marcar('f337','s337','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3371"></td>
+						<td class="escala" id="s3372"></td>
+						<td class="escala" id="s3373"></td>
+						<td class="escala" id="s3374"></td>
+						<td class="escala" id="s3375"></td>
+						</tr>
+				</table>
+				<h3>Cadena logística</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f341">
+						<td class="enunciado">Porcentaje de Fill Rate</td>
+						<td><select id="s341" onfocus="resetear('s341','3');" onchange="marcar('f341','s341','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3411"></td>
+						<td class="escala" id="s3412"></td>
+						<td class="escala" id="s3413"></td>
+						<td class="escala" id="s3414"></td>
+						<td class="escala" id="s3415"></td>
+					</tr>
+					<tr id="f342">
+						<td class="enunciado">On Time</td>
+						<td><select id="s342" onfocus="resetear('s342','3');" onchange="marcar('f342','s342','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3421"></td>
+						<td class="escala" id="s3422"></td>
+						<td class="escala" id="s3423"></td>
+						<td class="escala" id="s3424"></td>
+						<td class="escala" id="s3425"></td>
+					</tr>
+					<tr id="f343">
+						<td class="enunciado">Cumplimiento de ventana de entrega</td>
+						<td><select id="s343" onfocus="resetear('s343','3');" onchange="marcar('f343','s343','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3431"></td>
+						<td class="escala" id="s3432"></td>
+						<td class="escala" id="s3433"></td>
+						<td class="escala" id="s3434"></td>
+						<td class="escala" id="s3435"></td>
+					</tr>
+					<tr id="f344">
+						<td class="enunciado">Porcentaje de reducción de merma</td>
+						<td><select id="s344" onfocus="resetear('s344','3');" onchange="marcar('f344','s344','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3441"></td>
+						<td class="escala" id="s3442"></td>
+						<td class="escala" id="s3443"></td>
+						<td class="escala" id="s3444"></td>
+						<td class="escala" id="s3445"></td>
+					</tr>
+					<tr id="f345">
+						<td class="enunciado">Entrega en Cedis o DSD en tienda</td>
+						<td><select id="s345" onfocus="resetear('s345','3');" onchange="marcar('f345','s345','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3451"></td>
+						<td class="escala" id="s3452"></td>
+						<td class="escala" id="s3453"></td>
+						<td class="escala" id="s3454"></td>
+						<td class="escala" id="s3455"></td>
+					</tr>
+					<tr id="f346">
+						<td class="enunciado">Reducción de agotados en punto de venta</td>
+						<td><select id="s346" onfocus="resetear('s346','3');" onchange="marcar('f346','s346','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3461"></td>
+						<td class="escala" id="s3462"></td>
+						<td class="escala" id="s3463"></td>
+						<td class="escala" id="s3464"></td>
+						<td class="escala" id="s3465"></td>
+					</tr>
+				</table>
+				<h3>Optimización de las métricas financieras relevantes para el cliente</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th  style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f351">
+						<td class="enunciado">Porcentaje de Contribución al margen</td>
+						<td><select id="s351" onfocus="resetear('s351','3');" onchange="marcar('f351','s351','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3511"></td>
+						<td class="escala" id="s3512"></td>
+						<td class="escala" id="s3513"></td>
+						<td class="escala" id="s3514"></td>
+						<td class="escala" id="s3515"></td>
+					</tr>
+					<tr id="f352">
+						<td class="enunciado">Contribución al efectivo</td>
+						<td><select id="s352" onfocus="resetear('s352','3');" onchange="marcar('f352','s352','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3521"></td>
+						<td class="escala" id="s3522"></td>
+						<td class="escala" id="s3523"></td>
+						<td class="escala" id="s3524"></td>
+						<td class="escala" id="s3525"></td>
+					</tr>
+					<tr id="f353">
+						<td class="enunciado">Rentabilidad por metro lineal</td>
+						<td><select id="s353" onfocus="resetear('s353','3');" onchange="marcar('f353','s353','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3531"></td>
+						<td class="escala" id="s3532"></td>
+						<td class="escala" id="s3533"></td>
+						<td class="escala" id="s3534"></td>
+						<td class="escala" id="s3535"></td>
+					</tr>
+					<tr id="f354">
+						<td class="enunciado">Rentabilidad por empleado	</td>
+						<td><select id="s354" onfocus="resetear('s354','3');" onchange="marcar('f354','s354','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3541"></td>
+						<td class="escala" id="s3542"></td>
+						<td class="escala" id="s3543"></td>
+						<td class="escala" id="s3544"></td>
+						<td class="escala" id="s3545"></td>
+					</tr>
+				</table>
+				<h3>Optimización de inventarios y capital de trabajo</h3>
+				<table><tr><th style="background-color: #FFFFFF;"></th><th style="background-color: #FFFFFF;"></th><th><img src="img/1.png" height="25" /></th><th><img src="img/2.png" height="25" /></th><th><img src="img/3.png" height="25" /></th><th><img src="img/4.png" height="25" /></th><th><img src="img/5.png" height="25" /></th></tr>
+					<tr id="f361">
+						<td class="enunciado">Rotación de inventarios</td>
+						<td><select id="s361" onfocus="resetear('s361','3');" onchange="marcar('f361','s361','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3611"></td>
+						<td class="escala" id="s3612"></td>
+						<td class="escala" id="s3613"></td>
+						<td class="escala" id="s3614"></td>
+						<td class="escala" id="s3615"></td>
+					</tr>
+					<tr id="f362">
+						<td class="enunciado">Dias inventario totales</td>
+						<td><select id="s362" onfocus="resetear('s362','3');" onchange="marcar('f362','s362','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3621"></td>
+						<td class="escala" id="s3622"></td>
+						<td class="escala" id="s3623"></td>
+						<td class="escala" id="s3624"></td>
+						<td class="escala" id="s3625"></td>
+					</tr>
+					<tr id="f363">
+						<td class="enunciado">GMROI y GMROII Inventarios</td>
+						<td><select id="s363" onfocus="resetear('s363','3');" onchange="marcar('f363','s363','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3631"></td>
+						<td class="escala" id="s3632"></td>
+						<td class="escala" id="s3633"></td>
+						<td class="escala" id="s3634"></td>
+						<td class="escala" id="s3635"></td>
+					</tr>
+					<tr id="f364">
+						<td class="enunciado">Entregas justo a tiempo</td>
+						<td><select id="s364" onfocus="resetear('s364','3');" onchange="marcar('f364','s364','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3641"></td>
+						<td class="escala" id="s3642"></td>
+						<td class="escala" id="s3643"></td>
+						<td class="escala" id="s3644"></td>
+						<td class="escala" id="s3645"></td>
+					</tr>
+					<tr id="f365">
+						<td class="enunciado">Cuentas por pagar</td>
+						<td><select id="s365" onfocus="resetear('s365','3');" onchange="marcar('f365','s365','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3651"></td>
+						<td class="escala" id="s3652"></td>
+						<td class="escala" id="s3653"></td>
+						<td class="escala" id="s3654"></td>
+						<td class="escala" id="s3655"></td>
+					</tr>
+					<tr id="f366">
+						<td class="enunciado">Capital de trabajo</td>
+						<td><select id="s366" onfocus="resetear('s366','3');" onchange="marcar('f366','s366','pro3');"><option>Elige...</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></td>
+						<td class="escala" id="s3661"></td>
+						<td class="escala" id="s3662"></td>
+						<td class="escala" id="s3663"></td>
+						<td class="escala" id="s3664"></td>
+						<td class="escala" id="s3665"></td>
+					</tr>
+				</table>
+			</div>		
+		</div>
+		<div id="secImpresion">				
+		<p>¿Deseas imprimir esta página?</p>
+			<button onclick="imprimir()">Imprime</button>
+		</div>		<footer>&copy; 2020 Key Learning Solutions para Bachoco. Todos los logotipos, imágenes y contenido de este sitio web son marcas registradas y no pueden usarse sin autorización de sus respectivos propietarios.</footer>
+	</body>
+</html>

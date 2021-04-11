@@ -1,0 +1,139 @@
+@media only screen and (max-width: 400px) {
+				.escala {
+				display:none;
+			}
+				th{
+				display:none;				
+				}
+				.alto{
+				display:none;
+				}
+				.bajo
+				{
+				display:none;
+				}
+				.medio{
+				display:none;				
+				}	
+		}
+			@font-face{
+				font-family:QlassikMedium;
+				src: url("../fonts/qlassiktb.woff2") format("woff2");
+				font-weight: normal;
+				font-style: normal;
+			}
+			@font-face{
+				font-family:QlassikBold;
+				src: url("../fonts/qlassikboldtb.woff2") format("woff2");
+				font-weight: bold;
+				font-style: bold;
+			}
+			body {
+				background-color: #ffebe1;				
+				font-family: QlassikMedium;
+				font-size:12pt;
+				color: #1d3c00;				
+			}
+			button {
+				border-radius: 5px;
+				color: #1d3c00;
+				font-family:QlassikBold;
+				font-size:12pt;
+			}	
+			select {
+					font-family: QlassikMedium;
+			}
+			h1{
+				font-family:QlassikBold;
+				color:#50a100;
+			}
+			h2 {
+				font-family:QlassikBold;
+				color:#50a100;
+			}
+			table {
+				border-collapse: collapse;				
+				margin: auto;
+				max-width: 1000px;
+				width: 90%;					
+			}
+			th {
+				background-color: #ffebe1;
+				min-width: 10%;			
+			}
+			tr {
+				height: 28px;
+			}
+			.alto {
+				background-color: #00FF00;			
+			}
+			.bajo {
+				background-color: #FF0000;			
+			}
+			.btnCol{
+				
+				cursor: pointer;
+				float: left;
+				height:20px;
+				margin-right: 5px;
+				width: 20px;		
+			}
+			.btnExp{
+				cursor: pointer;
+				float: left;
+				height:20px;
+				margin-right: 5px;
+				width: 20px;		
+			}
+			.enunciado{
+				min-width:40%;
+			}			
+			.escala {
+				background-color: #FFFFFF;				
+				border-left: solid 1px #ff5200; 
+				border-right: solid 1px #ff5200;
+			}
+			.medio {
+				background-color: #FFFF00;			
+			}
+			.parrafoPromedio {
+				font-size: 14pt;
+				text-align:right;
+			}
+			#contenido {
+				background-color: #FFFFFF;
+				height:100%;
+				max-width: 80%;
+				margin:auto;
+				padding: 5px;
+				width: 90%;			
+			}
+			footer {
+				font-size: 10pt;
+				margin: auto;
+			}
+			#s1 {
+				page-break-after: always;
+		}
+			#s2 {
+				page-break-after: always;
+		}
+			#s3 {
+				page-break-after: always;
+		}
+			#secImpresion {
+				background-color:white;
+				float:left
+				margin-left: auto;
+				max-width: 200px;
+				text-align: center;
+			}
+			#titulo {
+				text-align: center;
+			}
+			#top-banner {
+				height:150px;
+				margin: auto;
+				max-width:1000px;
+				width:100%;
+			}
