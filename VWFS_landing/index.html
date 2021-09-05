@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Landing Page en formato simple para uso de los programas de capacitación de Volkswagen Financial Services, desarrollado por Key Learning Solutions.-->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volkswagen Financial Services</title>
+    <style>
+      @font-face {
+        font-family: fuenteVWFS;
+        src: url(font/VWAGTheSans-Regular.woff);
+      }
+      body{
+        background:url(img/vwfs_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: top left;
+        background-color:#004666;
+        box-sizing:border-box;
+        color:#fff;
+        font-family: fuenteVWFS;
+        padding-left:100px;
+        padding-top: 120px;
+    }
+    .programa {
+      float:left;
+      width:50%;
+    }
+    .programa h2{
+      background-color:#66e4ee;
+      border-radius: 10px 10px 0px 0px;
+      color:#004666;
+      cursor:pointer;
+      margin-bottom: 3px;
+      padding: 10px;
+    }
+    .programa ol{
+      display:none;
+    }
+    .programa ol li a {
+      color:#fff;
+      text-decoration: none;
+    }
+    .programa ol li:hover{
+      background-color: #038364;
+    }
+    #imagen{
+      float:right;
+      height: 350px;
+      width:45%;
+    }
+    #imagen img {
+      /*height: 300px;*/
+      width: 100%;
+    }
+    </style>
+    <script>
+      var prActual = 'nada';
+      function abrirP(nSeleccion, nImg) {
+        if (prActual != 'nada') {
+          document.getElementById(prActual).style.display = 'none';
+        };
+
+        prActual = nSeleccion;
+        document.getElementById(prActual).style.display = 'block';
+        document.getElementById('portadilla').src = nImg;
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Programas de capacitación de VW FS</h1>
+    <p>Bienvenida(o):</p>
+    <p>En este sitio podrás revisar los diferentes programas de capacitación que Volkswagen Financial Services pone a tu disposición.</p>
+    <p>Haz clic en el nombre del programa y luego en el módulo correspondiente, para que este se abra en una nueva ventana del navegador.</p>
+    <div id="imagen">
+      <img id="portadilla" src="img/vwfs_logo.jpg" />
+    </div>
+    <div class="programa" id="nc" onclick="abrirP('lista_nc', 'img/nc_img.jpg');">
+      <h2>Nuestra Cultura VW FS</h2>
+      <ol id="lista_nc">
+        <li><a href="nc/1" target="_blank">Valores</a></li>
+        <li><a href="nc/2" target="_blank">Integridad</a></li>
+        <li><a href="nc/3" target="_blank">Fundamentos esenciales</a></li>
+      </ol>
+    </div>
+    <div class="programa" id="usc" onclick="abrirP('lista_usc', 'img/usc_img.jpg');">
+      <h2>Unidad Somos Compliance</h2>
+      <ol id="lista_usc">
+        <li><a href="usc/1" target="_blank">Código de Conducta y Ética</a></li>
+        <li><a href="usc/2" target="_blank">Competencia Económica</a></li>
+        <li><a href="usc/3" target="_blank">Protección de Datos Personales</a></li>
+        <li><a href="usc/4" target="_blank">Anticorrupción</a></li>
+        <li><a href="usc/5" target="_blank">Prevención de Lavado de Dinero</a></li>
+    </ol>
+    </div>
+    <div class="programa" id="cce" onclick="abrirP('lista_cce','img/cce_img.jpg');">
+      <h2>Guía Práctica de Conducta y Ética</h2>
+      <ol id="lista_cce">
+        <li><a href="gpcce/GPCCE.pdf" download>Descarga nuestra Guía Práctica del Código de Conducta</a></li>
+      </ol>
+    </div>
+  </body>
+</html>
